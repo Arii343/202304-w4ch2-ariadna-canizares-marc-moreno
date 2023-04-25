@@ -20,10 +20,11 @@
 ## App
 
 - Render the card-list
+- Show the header
 
 ## Button
 
-- Receives a prop with the text
+- Receives a prop with the text of the button
 - Receives a prop with the action on click
 - Calls the function that deletes the character
 
