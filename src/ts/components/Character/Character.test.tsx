@@ -15,7 +15,15 @@ describe("Given a Character component", () => {
         name: expectedName,
       };
 
-      render(<Character character={lukeCharacter} />);
+      const actionOnClick = jest.fn();
+
+      render(
+        <Character
+          character={lukeCharacter}
+          actionOnClick={actionOnClick}
+          buttonText=""
+        />
+      );
 
       const name = screen.getByRole("img");
 
