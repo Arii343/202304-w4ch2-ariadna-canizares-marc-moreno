@@ -1,5 +1,7 @@
+import CharacterList from "../CharactersList/CharactersList";
+
 const App = (): JSX.Element => {
-  return <p></p>;
+  return <CharacterList />;
 };
 
 export default App;
