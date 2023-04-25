@@ -36,5 +36,6 @@
 ## Character
 
 - Receives a prop with a character
+- Render the character
 - Receives a prop with the action on click
 - Render the button component
