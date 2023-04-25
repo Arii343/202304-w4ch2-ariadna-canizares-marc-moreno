@@ -9,7 +9,7 @@ const CharacterList = (): JSX.Element => {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch(`${apiUrl}`);
+      const response = await fetch(`${apiUrl}characters`);
       const charactersApi = (await response.json()) as CharacterStructure[];
       loadCharacters(charactersApi);
     })();
