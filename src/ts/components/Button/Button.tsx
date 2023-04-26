@@ -5,7 +5,12 @@ interface ButtonProps {
 
 const Button = ({ text, actionOnClick }: ButtonProps): JSX.Element => {
   return (
-    <button type="button" className="button" onClick={actionOnClick}>
+    <button
+      type="button"
+      className="button"
+      onClick={actionOnClick}
+      aria-label="Delete button"
+    >
       {text}
     </button>
   );
