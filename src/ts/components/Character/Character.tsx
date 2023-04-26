@@ -22,9 +22,9 @@ const Character = ({
             alt={name}
           />
         </li>
-        <li>{height}</li>
-        <li>{mass}</li>
-        <li>{created}</li>
+        <li>Height: {height}</li>
+        <li>Mass: {mass}</li>
+        <li>Created: {created}</li>
         <Button text={buttonText} actionOnClick={() => actionOnClick(id)} />
       </ul>
     </li>
