@@ -1,11 +1,16 @@
 import CharacterStructure from "../../types";
+import Button from "../Button/Button";
 
 interface CharacterProps {
   character: CharacterStructure;
+  actionOnClick: (id: number) => void;
+  buttonText: string;
 }
 
 const Character = ({
   character: { created, height, mass, name, id },
+  actionOnClick,
+  buttonText,
 }: CharacterProps) => {
   return (
     <li>
@@ -20,6 +25,7 @@ const Character = ({
         <li>Height: {height}</li>
         <li>Mass: {mass}</li>
         <li>Created: {created}</li>
+        <Button text={buttonText} actionOnClick={() => actionOnClick(id)} />
       </ul>
     </li>
   );
